@@ -5,7 +5,7 @@ var changeMessage = document.getElementById("change");
 
 function calcular() {
   var paidPrice = parseFloat(inPaid.value);
-  if (inPaid.value == "" || isNaN(inPaid.value)) {
+  if (inPaid.value == "" || isNaN(inPaid.value) || paidPrice < 0) {
     alert("Insira um valor real");
     inPaid.value = "";
     inPaid.focus();
